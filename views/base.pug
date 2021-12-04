@@ -1,0 +1,24 @@
+html
+  head
+    title Info-News Network
+    block scripts
+  Body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/image/logo3.png")
+
+            li #[a(href="/") Home]
+            li #[a(href="/world") World]
+            li #[a(href="/bbc") bbc News]
+            li #[a(href="/articles") articles]
+            li #[a(href="/feedback") feedback]
+
+            form#myform
+              input(id="search-btn",class="txt",type="search",placeholder="Search",aria-label="Search")
+              button#button  search
+
+    block content
+    block foot
+      #footer
+        | Copyright © 2021 Info-News Network | All Rights Reserved

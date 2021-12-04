@@ -1,0 +1,24 @@
+extends base.pug
+
+block scripts
+    script(src='../static/index.js')
+
+    style
+        include ../static/style.css
+        include ../static/homeStyle.css
+
+
+block content
+    div.container
+        div.heading
+            h3 Top News 
+                span(class="badge badge-secondary") by Info-News Network
+        hr
+        br
+        article#box
+            div.fluid-container
+                div
+                    h2#title
+                div.card
+                    img
+                    p#content

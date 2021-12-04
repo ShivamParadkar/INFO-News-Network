@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+
+body{
+    background-color: #12232E;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    font-family: 'Comforter Brush', cursive;
+    padding: 10px;
+}
+
+img{
+    margin: 0 4px;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 75px;
+    padding: 10px;
+    background-color:skyblue;
+    border: 2px solid black;
+    border-radius:7px;
+}
+
+.artinp{
+    height: 50px;
+    width: 450px;
+    border: 2px solid black;
+    border-radius:6px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+#btn {background-image: linear-gradient(to right, #ADD100 0%, #7B920A  51%, #ADD100  100%)}
+#btn {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+   display: block;
+   margin-left: 157px;
+ }
+
+ #btn:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ #sect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px;
+}
+
+.fluid-container{
+    background-color: whitesmoke;
+    margin: 10px 15px;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius:5px;
+    width: 70%;
+    overflow: hidden;
+}
+
+#head{
+    margin: 15px;
+    padding:10px;
+    display: flex;
+    justify-content:center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 23px;
+}
+
+.div1{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#word{
+    width: 40%;
+    padding: 5px;
+    font-family: 'Inconsolata', monospace;
+    font-size:21px;
+}
+
+#content{
+   margin: 15px;
+   padding: 10px;
+   font-size: 18px;
+}
+
+@media (max-width:790px) {
+
+    #searchForm{
+        display: inline-block;
+        align-items: center;
+    }
+
+    .artinp{
+        height: auto;
+        width:auto;
+    }
+
+    #btn{
+        margin-left:20px;
+    }
+
+    .div1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #photo{
+        height: 90%;
+        width:90%;
+    }
+
+    #word{
+        width:90%;
+    }
+
+    .fluid-container{
+       width:90%;
+    }
+
+    #content{
+        margin: 15px;
+        padding: 10px;
+        font-size: 18px;
+     }
+    
+}

@@ -1,0 +1,18 @@
+body{
+    background-color: #3500D3;
+}
+
+.newses{
+    margin: 15px;
+    padding: 25px;
+    list-style: none;
+    background-color: #EFE2BA;
+    border: 2px solid black;
+    border-radius:5px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    color:white;
+}

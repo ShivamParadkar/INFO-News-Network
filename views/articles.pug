@@ -1,0 +1,30 @@
+extends base.pug
+
+block scripts
+    script(src='../static/articles.js')
+
+    style
+        include ../static/style.css
+        include ../static/articlesStyle.css
+
+
+block content
+    div.heading
+        img(src="../static/image/logo1.png", alt="image",width="45px",height="45px")
+        h1 News Articles
+    div.search
+        form#searchForm
+            input(id="searchtxt",class="artinp",type="text",placeholder="search any article")
+            button(id="btn") Search
+    hr
+    br
+    article#sect
+            div.fluid-container
+                div
+                    h2#head
+                div.card
+                    img
+                    p#content
+                div.content
+                    p#para
+                                    

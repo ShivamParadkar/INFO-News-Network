@@ -1,0 +1,17 @@
+extends base.pug
+
+block scripts
+
+    style
+        include ../static/style.css
+        include ../static/feedbackStyle.css
+
+
+block content
+    h2 Feedback Form
+    hr
+    div.container
+        form(action= "/feedback", method= "post", class= "myForm")
+            textarea(placeholder="enter your feedback here",name="feedback",rows= "10")
+            button.btn
+                | submit
