@@ -5,12 +5,10 @@ const app = express();
 const mongoose = require('mongoose');
 const bodyparser = require("body-parser");
 
-
 const DB = `mongodb+srv://Sparadkar:laura@cluster0.u7prp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 
-mongoose.connect(DB, {useNewUrlParser: true});
 
-const port = 80;
+mongoose.connect(DB, {useNewUrlParser: true,});
 
 // using EXPRESS npm
 app.use('/static', express.static('static')) // For serving static files
@@ -58,6 +56,6 @@ app.post('/feedback', (req, res)=>{
 })
 
 // START THE SERVER
-app.listen(port, ()=>{
-    console.log(`The application started successfully on port ${port}`);
+app.listen(process.env.PORT, ()=>{
+    console.log(`The application started successfully on port`);
 });
