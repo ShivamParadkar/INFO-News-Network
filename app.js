@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config()
+  }
+
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
@@ -5,10 +9,7 @@ const app = express();
 const mongoose = require('mongoose');
 const bodyparser = require("body-parser");
 
-const DB = `mongodb+srv://Sparadkar:laura@cluster0.u7prp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
-
-
-mongoose.connect(DB, {useNewUrlParser: true,});
+mongoose.connect(process.env.DB, {useNewUrlParser: true,});
 
 // using EXPRESS npm
 app.use('/static', express.static('static')) // For serving static files
@@ -56,6 +57,6 @@ app.post('/feedback', (req, res)=>{
 })
 
 // START THE SERVER
-app.listen(process.env.PORT, ()=>{
+app.listen(process.env.PORT || 80, ()=>{
     console.log(`The application started successfully on port`);
 });
